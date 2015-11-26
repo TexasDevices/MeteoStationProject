@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">MeteoStation_v0.1.1</string>
+
+    <!--  BluetoothChat -->
+    
+    
+    <string name="send">Wyślij</string>
+    <string name="not_connected">Nie jesteś połączony ze stacją</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled.</string>
+    <string name="title_connecting">łączenie...</string>
+    <string name="title_connected_to">Podłączony do stacji: <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">Nie podłączony</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">Trwa wyszukiwanie stacji...</string>
+	   <!-- Options Menu -->
+    <string name="secure_connect">Connect a device - Secure</string>
+    <string name="insecure_connect">Connect a device - Insecure</string>
+    <string name="action_settings">Action_settings</string>
+    <string name="discoverable">Make discoverable</string>
+    <string name="error">Błąd !!!</string>
+    <string name="no_bluetooth_device">This device does not have a suitable bluetooth device, unfortunately the application will not work correctly</string>
+    <string name="bt_enabled">Bluetooth has been enabled ! </string>
+    <string name="bt_not_enabled">Bluetooth has not been enabled correctly !</string>
+    
+    <string name="str_min">MIN</string>
+    <string name="str_max">MAX</string>
+    
+    
+    
+    <!-- Unit Symbols     -->
+     <string name="tempUnit">  °C</string>
+    
+    <string name="str_temperature_value">%s°C</string>
+    <string name="str_temperature_value_f">%s°F</string>
+    <string name="str_min_value">%s%%</string>
+    <string name="str_max_value">%s mi</string>
+    <string name="strOnSearching">Please wait for searching...</string>
+    <string name="strOnUpdating">Please wait for updating...</string>
+    <string name="strFetchingData">Please wait fetching data...</string>
+    <string name="strFetchFailed">Please check, get failed :(</string>
+    <string name="strGetSuccess">Weather updated</string>
+    <string name="strUpdating">Updating weather of location</string>
+    
+    <!-- For context menu -->
+        <string name="str_no_data">***</string>
+    <string name="title_context_menu_setting">Yahoo Weather Setting</string>
+    <string name="defalt_menu_name">No name</string>
+    <string name="context_menu_changeLocation">Set weather Location</string>
+    <string name="temperature_unit">Temperature unit</string>
+    <string name="context_menu_update_time">AutoUpdate</string>
+    <string name="selectTemperatureUnit">Set your prefer unit</string>
+    <string name="selectTimeUpdate">Set auto-update time</string>
+    
+    
+    
+    <!-- Here are names of our devices// add if you need more  -->
+    <string-array 
+        name="AVAILABLE_DEVICES">
+    <item>FAZA</item>
+    <item>FAZA2</item>  
+    </string-array>
+    
+     <string-array 
+        name="COMMANDS_TO_METER">
+    <item>AAAx</item> 
+    <item>BBBx</item>  
+    </string-array>
+    
+     
+     <string name="chart_prompt">Wybierz wykres</string>
+     <string-array  name= "types_of_charts_temp">
+         <item>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </item>
+         <item>Miesięczny rozkład temperatury - wartości max i min</item>
+         <item>Wykres zmian temperatury - dzisiaj</item>
+         <item>Średnia roczna temperatura</item>
+     </string-array>
+     
+     
+     <string-array  name= "types_of_charts_pressure">
+         <item>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </item>
+         <item>Miesięczny rozkład ciśnienia - wartości max i min</item>
+         <item>Wykres zmian ciśnienia - dzisiaj</item>
+         <item>Średnie roczne ciśnienie</item>
+     </string-array>
+     
+     
+      <string-array  name= "types_of_charts_humidity">
+         <item>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </item>
+         <item>Miesięczny rozkład wilgotności - wartości max i min</item>
+         <item>Wykres zmian wilgotności - dzisiaj</item>
+         <item>Średnia roczna wilgotność</item>
+     </string-array>
+     
+      
+      <string-array  name= "types_of_charts_light">
+         <item>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </item>
+         <item>Miesięczny rozkład natężenia oświetlenia - wartości max i min</item>
+         <item>Wykres zmian natężenia oświetlenia w ciągu dnia - dzisiaj</item>
+         <item>Średnia roczna wartość natężenia oświetlenia na zewnątrz</item>
+     </string-array>
+     
+     <string name="current_title">Aktualny prąd ładowania baterii:</string>
+     
+     <string name="voltage_title">Napięcie wyjściowe generatora:</string>
+    
+    
+</resources>

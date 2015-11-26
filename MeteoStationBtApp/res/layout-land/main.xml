@@ -1,0 +1,99 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+<RelativeLayout
+    android:id="@+id/mainRelLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/start_background"
+    android:orientation="vertical" >
+
+    <Space
+        android:id="@+id/mainSpace1"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/authors"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/mainLinearLayout1"
+        android:layout_alignParentRight="true"
+        android:text="Autorzy: uszko, kwieciński"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:id="@+id/mainLinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20.0dip"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/nameofapp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="0.78"
+            android:text="APLIKACJA METEO STATION v0.1"
+            android:textColor="@color/green_focus"
+            android:textSize="50sp"
+            android:textStyle="italic" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="31dp" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/ButtonText"
+            android:layout_width="250dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/redbutton"
+            android:text="START" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp" />
+
+        <Button
+            android:id="@+id/connect"
+            style="@style/ButtonText"
+            android:layout_width="250dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@drawable/purplebutton"
+            android:text="CONNECT" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="1dp" />
+
+        <LinearLayout
+            android:id="@+id/mainLinearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+
+            <Space
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pack.meteostationapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+      <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/weather_clouds_icon"
+        android:label="@string/app_name">
+        <!--  android:theme="@style/AppTheme" > --> 
+        <!-- "com.pack.meteostationapp.MainActivity"  > -->
+        <activity
+            android:name="com.pack.meteostationapp.MainActivity"   
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pack.meteostationapp.BtDeviceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/scanning" 
+            android:theme="@android:style/Theme.Holo.Dialog" />
+    
+        <activity android:name="com.pack.meteostationapp.Results" />
+        <activity android:name="com.pack.meteostationapp.TempActivity" />
+        <activity android:name="com.pack.meteostationapp.LightActivity" />
+        <activity android:name="com.pack.meteostationapp.HumidityActivity" />
+        <activity android:name="com.pack.meteostationapp.PressureActivity" />
+		<activity android:name="com.pack.meteostationapp.chart.RMSTimeChart" />
+		<activity android:name="com.pack.meteostationapp.chart.FFTChart" />
+		<activity android:name="com.pack.meteostationapp.chart.TemperatureChart" />
+		<activity android:name="com.pack.meteostationapp.chart.CurrentDialChart" />
+		<activity android:name="org.achartengine.GraphicalActivity" />
+       
+           <!--  --> 
+           
+           <!--<receiver android:name ="com.inz.rogovskycurrentmeter.DataReceiver">
+               <intent-filter>
+                   <action android:name ="DATA_ACTION"/>
+               </intent-filter>
+           </receiver>
+           -->
+		</application>
+
+</manifest>
